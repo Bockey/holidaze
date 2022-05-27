@@ -1,0 +1,35 @@
+.select-form{
+    padding: 2rem 0;
+    .accordion{
+        margin-top: 4rem;
+        &-item{
+            border: none;
+            .accordion-header{
+                .accordion-button{
+                    background-color: unset;
+                    color: $color-white;
+                    font-size: 20px;
+                    justify-content: center;
+                    height: 100%;
+                    font-family: $font-secondary;
+                    &:not(.collapsed){
+                        box-shadow: none;
+                    }
+                    &::after{
+                        display: none;
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+                
+            }
+        }
+        &-body{
+            .btn-primary{
+                margin-top: 2rem;
+            }
+        }
+    }
+    
+}

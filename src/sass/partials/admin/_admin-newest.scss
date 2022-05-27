@@ -1,0 +1,26 @@
+.admin-newest-body{
+    .container{
+        padding: 1rem;
+        form{
+            h1{
+                padding-bottom: 1rem;
+            }
+            textarea{
+                min-height: 10rem;
+            }
+            select{
+                display: block;
+            }
+            .btn-primary{
+                margin: 0.5rem;
+                width: 104px;
+                height: 35px;
+                line-height: 28px;
+                border-radius: 15px;
+                background-color: #324E69;
+                color: #FFF;
+                font-size: 14px;
+            }
+        }
+    }
+}

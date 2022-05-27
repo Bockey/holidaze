@@ -1,0 +1,90 @@
+
+.btn-primary{
+    background-color: $color-green;
+    border: none;
+    border-radius: 0;
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    
+    &:hover{
+        background-color: $color-green;
+        opacity: 0.7;
+    }
+    &:focus{
+        background-color: $color-green;
+    }
+}
+
+a:hover{
+    opacity: 0.7;
+    color: unset;
+}
+.footer{
+   
+    @media (min-width: 992px) {
+        background: $color-white;
+        margin-left: 145px;
+    }
+    
+}
+.social-networks{
+    margin: 1rem;
+    margin-top: 5rem;
+    @media (min-width: 992px) {
+        padding-top: 4rem;
+    }
+    a{
+        color: $color-green;
+        text-align: left;
+        border-bottom: 2px solid $color-lightBlue;
+        @media (min-width: 992px) {
+            max-width: 300px;
+           
+        }
+        &:hover{
+            color: $color-green;
+            opacity: 0.7;
+        }
+    }
+    a:last-child{
+        border: none;
+    }
+}
+.signature{
+    color: $color-black;
+    opacity: 0.5;
+    text-decoration: none;
+    margin-top: 3rem;
+    display: inline-block;
+}
+.spinner{
+    padding: 4rem 1rem;
+}
+
+form, .select-form, h1, h2, h3{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.half-input{
+    width: 50%;
+    display: inline-block;
+}
+.container{
+    @media (min-width: 992px) {
+        margin-top: 130px; 
+    }
+    min-height: 100vh;
+}
+.form-error{
+    margin-top: 0.3rem;
+}
+.back-btn{
+    display: block;
+    text-align: left;
+    margin: 0.5rem;
+}

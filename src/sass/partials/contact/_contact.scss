@@ -1,0 +1,25 @@
+.contact-body{
+    background-color: $color-transparentBlue;
+    .container{
+        background-color: $color-transparentBlue;
+            padding: 1rem;
+        form{
+            h1{
+                padding-bottom: 1rem;
+            }
+            textarea{
+                min-height: 10rem;
+            }
+            .btn-primary{
+                margin: 0.5rem;
+                width: 104px;
+                height: 35px;
+                line-height: 28px;
+                border-radius: 15px;
+                background-color: #324E69;
+                color: #FFF;
+                font-size: 14px;
+            }
+        }
+    }
+}

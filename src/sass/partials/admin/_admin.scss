@@ -1,0 +1,22 @@
+
+.admin-body{
+    background-color: $color-white;
+    .admin-page{
+        text-align: left;
+        padding: 1rem;
+        h1{
+            padding-left: 0;
+            span{
+                color: $color-orange;
+                text-transform: capitalize;
+            }
+        }
+        &_links{
+            a{
+                display: block;
+                margin-top: 1rem;
+                color: $color-black;
+            }
+        }
+    }
+}

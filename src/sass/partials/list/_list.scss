@@ -1,0 +1,67 @@
+.list-body{
+    @media (min-width: 992px) {
+        .container{
+            background-color: $color-white;
+            padding: 4rem;
+            max-width: 900px;
+        }
+    }
+}
+.container{
+   
+    .landing-image{
+        width: 100%;
+        height: 60vh;
+        background: url("../../../images/list-landing.jpg") center/cover no-repeat;
+        @media (min-width: 992px) {
+            // display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            z-index: -2;
+        }
+    }
+    .acc-filters{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin:  1rem 0;
+        .active{
+            background-color: $color-blue;
+            color: $color-white;
+        }
+        a{
+            background-color: $color-lightBlue;
+            color: $color-blue;
+            text-decoration: none;
+            margin: 0.5rem;
+            width: 104px;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 15px;
+        }
+    }
+    .card{
+        border-top: 5px solid $color-black;
+        margin-bottom: 1rem;
+       .card-image{
+           height: 40vh;
+       }
+       .card-body{
+           background-color: $color-transparentBlue;
+        p{
+            svg{
+                margin-right: 0.3rem;
+            }
+            span{
+                display: block;
+            }
+        }
+        .btn-primary{
+            line-height: 55px;
+        }
+       }
+       
+    }
+}
