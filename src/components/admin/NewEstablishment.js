@@ -14,6 +14,15 @@ import BackBtn from "./BackBtn";
 
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
+  address: yup.string().required("Address is required"),
+  rating: yup.string().required("Rating is required"),
+  description: yup.string().required("Description is required"),
+  images: yup.string().required("First image is required"),
+  images2: yup.string().required("Second image is required"),
+  roomname: yup.string().required("Room name is required"),
+  roomdescription: yup.string().required("Room description is required"),
+  price: yup.string().required("Price is required"),
+  images3: yup.string().required("Room image is required"),
 });
 
 const key = "ck_0f39a04d30e832adea2829b010a147ca08770493";
@@ -86,22 +95,6 @@ function NewEstablishment(props) {
     }
   }
 
-  //upload image
-  async function uploadImage(data) {
-    const imageUrl =
-      "https://holidaze.bockey.one/wp-json/wp/v2/media" +
-      "consumer_key=" +
-      key +
-      "&consumer_secret=" +
-      secret;
-    try {
-      const response = await axios.post(imageUrl, data);
-      console.log("response", response.data);
-    } catch (error) {
-      console.log("error", error);
-    }
-  }
-
   return (
     <>
       <BackBtn />
@@ -129,6 +122,7 @@ function NewEstablishment(props) {
                 {...register("address")}
               />
             </FloatingLabel>
+            {errors.address && <FormError>{errors.address.message}</FormError>}
           </Form.Group>
           <FloatingLabel controlId="floatingSelect" label="Type">
             <Form.Select
@@ -152,6 +146,7 @@ function NewEstablishment(props) {
                 {...register("rating")}
               />
             </FloatingLabel>
+            {errors.rating && <FormError>{errors.rating.message}</FormError>}
           </Form.Group>
           <Form.Group controlId="description" className="mb-3">
             <FloatingLabel controlId="floatingInput" label="Description">
@@ -162,9 +157,14 @@ function NewEstablishment(props) {
                 {...register("description")}
               />
             </FloatingLabel>
+            {errors.description && (
+              <FormError>{errors.description.message}</FormError>
+            )}
           </Form.Group>
           <GetImages register={register} images="images" />
+          {errors.images && <FormError>{errors.images.message}</FormError>}
           <GetImages register={register} images="images2" />
+          {errors.images2 && <FormError>{errors.images2.message}</FormError>}
           <Heading>Room details</Heading>
           <Form.Group controlId="roomname" className="mb-3">
             <FloatingLabel controlId="floatingInput" label="Room name">
@@ -175,6 +175,9 @@ function NewEstablishment(props) {
                 {...register("roomname")}
               />
             </FloatingLabel>
+            {errors.roomname && (
+              <FormError>{errors.roomname.message}</FormError>
+            )}
           </Form.Group>
           <Form.Group controlId="roomdescription" className="mb-3">
             <FloatingLabel controlId="floatingInput" label="Room description">
@@ -185,6 +188,9 @@ function NewEstablishment(props) {
                 {...register("roomdescription")}
               />
             </FloatingLabel>
+            {errors.roomdescription && (
+              <FormError>{errors.roomdescription.message}</FormError>
+            )}
           </Form.Group>
           <Form.Group controlId="price" className="mb-3">
             <FloatingLabel controlId="floatingInput" label="Price">
@@ -195,24 +201,14 @@ function NewEstablishment(props) {
                 {...register("price")}
               />
             </FloatingLabel>
+            {errors.price && <FormError>{errors.price.message}</FormError>}
           </Form.Group>
           <GetImages register={register} images="images3" />
-
+          {errors.images3 && <FormError>{errors.images3.message}</FormError>}
           <Button type="submit" variant="primary" className="mb-3">
             {submitting ? "Creating..." : "Create"}
           </Button>
         </fieldset>
-      </Form>
-      <Form onSubmit={uploadImage} encType="multipart/form-data" method="POST">
-        <Heading>Upload images to database</Heading>
-        <Form.Group className="mb-3">
-          <Form.Control
-            name="image-up"
-            placeholder="Upload image"
-            type="file"
-          />
-        </Form.Group>
-        <Button type="submit">Upload</Button>
       </Form>
     </>
   );
