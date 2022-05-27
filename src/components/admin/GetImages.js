@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
 
-function GetImages({ register, images }) {
+function GetImages({ register, images, label }) {
   const url = "https://holidaze.bockey.one/wp-json/wp/v2/media";
 
   const [media, setMedia] = useState([]);
@@ -24,7 +24,7 @@ function GetImages({ register, images }) {
 
   return (
     <select name={images} {...register(images)}>
-      <option value="">Select media</option>
+      <option value="">{label}</option>
       {media.map((media) => {
         return (
           <option key={media.id} value={media.id}>

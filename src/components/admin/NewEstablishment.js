@@ -161,9 +161,17 @@ function NewEstablishment(props) {
               <FormError>{errors.description.message}</FormError>
             )}
           </Form.Group>
-          <GetImages register={register} images="images" />
+          <GetImages
+            register={register}
+            images="images"
+            label="Select first image"
+          />
           {errors.images && <FormError>{errors.images.message}</FormError>}
-          <GetImages register={register} images="images2" />
+          <GetImages
+            register={register}
+            images="images2"
+            label="Select second image"
+          />
           {errors.images2 && <FormError>{errors.images2.message}</FormError>}
           <Heading>Room details</Heading>
           <Form.Group controlId="roomname" className="mb-3">
@@ -203,7 +211,11 @@ function NewEstablishment(props) {
             </FloatingLabel>
             {errors.price && <FormError>{errors.price.message}</FormError>}
           </Form.Group>
-          <GetImages register={register} images="images3" />
+          <GetImages
+            register={register}
+            images="images3"
+            label="Select room image"
+          />
           {errors.images3 && <FormError>{errors.images3.message}</FormError>}
           <Button type="submit" variant="primary" className="mb-3">
             {submitting ? "Creating..." : "Create"}
