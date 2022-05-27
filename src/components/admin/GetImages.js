@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
+import Form from "react-bootstrap/Form";
+import { FloatingLabel } from "react-bootstrap";
 
 function GetImages({ register, images, label }) {
   const url = "https://holidaze.bockey.one/wp-json/wp/v2/media";
@@ -23,16 +25,22 @@ function GetImages({ register, images, label }) {
   }, []);
 
   return (
-    <select name={images} {...register(images)}>
-      <option value="">{label}</option>
-      {media.map((media) => {
-        return (
-          <option key={media.id} value={media.id}>
-            {media.title.rendered}
-          </option>
-        );
-      })}
-    </select>
+    <FloatingLabel controlId="floatingSelect" label={label}>
+      <Form.Select
+        aria-label="Select image"
+        className="mb-3"
+        name={images}
+        {...register(images)}
+      >
+        {media.map((media) => {
+          return (
+            <option key={media.id} value={media.id}>
+              {media.title.rendered}
+            </option>
+          );
+        })}
+      </Form.Select>
+    </FloatingLabel>
   );
 }
 

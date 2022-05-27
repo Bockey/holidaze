@@ -17,12 +17,9 @@ const schema = yup.object().shape({
   address: yup.string().required("Address is required"),
   rating: yup.string().required("Rating is required"),
   description: yup.string().required("Description is required"),
-  images: yup.string().required("First image is required"),
-  images2: yup.string().required("Second image is required"),
   roomname: yup.string().required("Room name is required"),
   roomdescription: yup.string().required("Room description is required"),
   price: yup.string().required("Price is required"),
-  images3: yup.string().required("Room image is required"),
 });
 
 const key = "ck_0f39a04d30e832adea2829b010a147ca08770493";
@@ -166,13 +163,11 @@ function NewEstablishment(props) {
             images="images"
             label="Select first image"
           />
-          {errors.images && <FormError>{errors.images.message}</FormError>}
           <GetImages
             register={register}
             images="images2"
             label="Select second image"
           />
-          {errors.images2 && <FormError>{errors.images2.message}</FormError>}
           <Heading>Room details</Heading>
           <Form.Group controlId="roomname" className="mb-3">
             <FloatingLabel controlId="floatingInput" label="Room name">
@@ -216,7 +211,6 @@ function NewEstablishment(props) {
             images="images3"
             label="Select room image"
           />
-          {errors.images3 && <FormError>{errors.images3.message}</FormError>}
           <Button type="submit" variant="primary" className="mb-3">
             {submitting ? "Creating..." : "Create"}
           </Button>
