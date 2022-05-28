@@ -88,3 +88,9 @@ form, .select-form, h1, h2, h3{
     text-align: left;
     margin: 0.5rem;
 }
+@media (min-width: 992px) and (max-width: 1135px) {
+    .container{
+        max-width: 750px !important;
+        margin-left: 20%;
+    }
+}
