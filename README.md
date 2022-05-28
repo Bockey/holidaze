@@ -9,7 +9,7 @@ Style tile link - https://xd.adobe.com/view/544431cf-13c7-4bf4-b8f7-4a93bef3d9d0
 Prototype link - https://xd.adobe.com/view/4a94ff38-1f54-4403-a9b0-a115cd7ee9f5-1fc7/
 
 Project planned with help of Trello board.
-![](readme_images/trello-pe3.jpg)
+![](readme-images/trello-pe3.jpg)
 
 ## Login details
 
