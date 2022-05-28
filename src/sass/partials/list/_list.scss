@@ -1,9 +1,15 @@
 .list-body{
+   
     @media (min-width: 992px) {
         .container{
             background-color: $color-white;
             padding: 4rem;
             max-width: 900px;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1105px) {
+        .container{
+            max-width: 750px;
         }
     }
 }
