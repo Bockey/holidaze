@@ -19,7 +19,7 @@ Holidaze - hotel booking site builder with react/bootstrap/sass.
 ## Login details
 
 Username: teacher
-Password: noroff123
+Password: *********
 
 ### Admin page
 
