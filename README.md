@@ -10,6 +10,8 @@ Holidaze - hotel booking site builder with react/bootstrap/sass.
 
 ### Prototype link - https://xd.adobe.com/view/4a94ff38-1f54-4403-a9b0-a115cd7ee9f5-1fc7/
 
+### Trello boart - https://trello.com/b/IeK8ygNY/project-exam-2
+
 ## Project planned with help of Trello board.
 
 ![](readme-images/trello-pe3.jpg)
