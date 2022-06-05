@@ -1,23 +1,17 @@
 
 
 
+# Holidaze - Projext exam 2
 
 ![Home page](readme-images/holidaze-home.jpg)
 
-# Holidaze - Projext exam 2
 
 - Accommodation booking site
 - School project
 
 ## Description
 
-- Booking site with list of accommodations divided in categories :
-
-                                                                 1) Hotels
-
-                                                                 2) Guest Houses
-                                                                 
-                                                                 3) B&B's
+- Booking site with list of accommodations divided in categories : 1) Hotels 2) Guest Houses 3) B&B's
     
 - Specif accommodation page with details.
 
@@ -25,7 +19,7 @@
 
 - Admin page where is possible to create new establishment, see all enquiries and messages.
 
-### Style tile and prototype design done in Adobe xd done.
+### Style tile and prototype design done in Adobe Xd
 
 :globe_with_meridians: Style tile link - https://xd.adobe.com/view/544431cf-13c7-4bf4-b8f7-4a93bef3d9d0-0117/
 
@@ -35,11 +29,15 @@
 
 :globe_with_meridians: Trello board - https://trello.com/b/IeK8ygNY/project-exam-2
 
-![](readme-images/trello-pe3.jpg)
+<img src="readme-images/trello-pe3.jpg" alt="trello board" width="50%" />
 
 :globe_with_meridians: Live link - https://holidaze-accommodation.netlify.app
 
 ## Screenshots
+
+### List of accommodations
+
+<img alt="list" src="readme-images/holidaze-preview.gif" width="50%" />
 
 ### Admin page
 <div align="center"> 
