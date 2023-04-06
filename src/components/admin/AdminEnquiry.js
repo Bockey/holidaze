@@ -17,7 +17,7 @@ function AdminEnquiry() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const url =
-    "https://noroffcors.herokuapp.com/https://holidaze.bockey.one/wp-json/wp/v2/comments?post=247";
+    "https://corsproxy.io/?https://holidaze.bockey.one/wp-json/wp/v2/comments?post=247";
 
   useEffect(
     function () {
