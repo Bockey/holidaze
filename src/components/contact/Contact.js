@@ -65,7 +65,7 @@ export default function Contact() {
     };
     try {
       const response = await axios.post(
-        "https://noroffcors.herokuapp.com/https://holidaze.bockey.one/wp-json/wp/v2/comments?post=249",
+        "https://corsproxy.io/?https://holidaze.bockey.one/wp-json/wp/v2/comments?post=249",
         newData
       );
       console.log("response", response.data);
